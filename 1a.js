@@ -1,0 +1,1 @@
+console.log(Math.max(...require("fs").readFileSync(0).toString().split("\n\n").map(x => x.split("\n").map(x => parseInt(x)).reduce((a, b) => a + b, 0) || 0)))
